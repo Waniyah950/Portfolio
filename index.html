@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Porfolio</title>
+  </head>
+
+  <body class="bg-cover overflow-x-hidden overflow-y-auto">
+    <header class="hidden md:block">
+      <nav>
+        <span
+          class="text-3xl fixed flex justify-end right-6 top-5 font-bold cursor-pointer"
+          id="openbtn"
+          onclick="openNav()"
+          >☰</span
+        >
+        <div
+          id="mySidenav"
+          class="sidenav hidden right-1 border-white shadow-white shadow-xs bg-black h-screen fixed z-1 overflow-x-hidden pt-30"
+        >
+          <a
+            href="javascript:void(0)"
+            class="absolute font-bold top-2 right-10 text-4xl text-red-900 ml-50 hover:text-white transition-transform"
+            onclick="closeNav()"
+            >&times;</a
+          ><a
+            href="#home"
+            class="none block font-bold p-8 pt-0 text-3xl text-red-900 text-shadow-white text-shadow-2xs hover:text-white hover:text-shadow-black transition-colors"
+            >Home</a
+          ><a
+            href="#about"
+            class="none block font-bold p-8 pr-35 text-3xl text-red-900 text-shadow-white text-shadow-2xs hover:text-white hover:text-shadow-black transition-colors"
+            >About</a
+          ><a
+            href="#projects"
+            class="none block font-bold p-8 pr-35 text-3xl text-red-900 text-shadow-white text-shadow-2xs hover:text-white hover:text-shadow-black transition-colors"
+            >Projects</a
+          ><a
+            href="#skills"
+            class="none block font-bold p-8 pr-35 text-3xl text-red-900 text-shadow-white text-shadow-2xs hover:text-white hover:text-shadow-black transition-colors"
+            >Skills</a
+          >
+          <a
+            href="#contact"
+            class="none block font-bold p-8 pr-35 text-3xl text-red-900 text-shadow-white text-shadow-2xs hover:text-white hover:text-shadow-black transition-colors"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      
+      <section
+        id="home"
+        class="min-h-screen grid grid-cols-1 md:grid-cols-2"
+      >
+        <div class="flex justify-center items-center flex-col gap-6 py-12">
+          <h1
+            class="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight"
+          >
+            <span class="text-white text-shadow-black text-shadow-2xs">
+              FRONT END
+            </span>
+            <br />
+            <span class="text-black text-shadow-white text-shadow-2xs">
+              DEVELOPER
+            </span>
+          </h1>
+          <p
+            class="ml-6 italic font-bold text-white text-shadow-black text-shadow-2xs"
+          >
+            Hi! I'm Waniyah. A creative Begginer Frontend Developer <br />
+            with enthusiasm in building high-performance, scalable, <br />
+            and responsive web solutions.
+          </p>
+
+          <a href="#contact">
+            <button
+            class="px-10 py-4 font-semibold text-[#FDF6EC] bg-black shadow-2xs rounded-sm hover:text-black hover:text-shadow-black hover:bg-white hover:shadow-black hover:border-black hover:scale-105 transition-transform duration-500"
+            >
+            Hire Me
+          </button>
+          </a>
+        </div>
+        <div>
+          <div class="bg-red-800 h-screen ml-24 hidden md:block">
+            <img src="./Rose.jpeg" class="w-full h-screen" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="min-h-screen flex flex-col items-center justify-center md:mx-24 lg:mx-30 md:bg-center md:bg-cover md:bg-[url('./Handshake.png')]"
+      >
+        <div class="text-white text-shadow-2xs text-shadow-red-900">
+          <h1
+            class="text-4xl md:text-5xl text-red-900 text-shadow-black text-shadow-sm font-black text-center my-16"
+          >
+            About Me
+          </h1>
+
+          <p class="ml-10 my-5 text-sm md:text-2xl font-semibold tracking-wide">
+            I'm Waniyah, a frontend developer with a passion for tackling
+            complex problems head-on and a relentless drive to expand my
+            knowledge; whether its diving into research, learning new languages,
+            or exploring how technology shapes our health, wealth, and
+            relationships.
+          </p>
+          <p class="ml-10 my-5 text-sm md:text-2xl font-semibold tracking-wide">
+            I thrive on solving real-world challenges faced by developers and
+            users alike, crafting clean, scalable solutions that fuel my growth
+            and uplift the wider community.
+          </p>
+          <p class="ml-10 my-5 text-sm md:text-2xl font-semibold tracking-wide">
+            Time is my most precious resource, so I lean into productivity hacks
+            and deep learning to stay ahead — balancing hands-on coding with
+            intentional study to sharpen both skill and insight.
+          </p>
+          <p class="ml-10 my-5 text-sm md:text-2xl font-semibold tracking-wide">
+            When I'm not building interfaces, you'll find me immersed in
+            entertainment and education, keeping both joy and discipline in
+            perfect sync.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="h-fit flex flex-col items-center justify-center gap-4 py-10"
+      >
+        <h1
+          class="text-4xl md:text-5xl text-black text-shadow-white text-shadow-2xs font-black text-center my-10"
+        >
+          Projects
+        </h1>
+
+        <div
+          class="border-4 rounded-lg w-9/12 h-fit shadow-sm shadow-white md:hover:scale-105 bg-white transition-transform duration-500"
+        >
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+          >
+            CSS Fig
+          </h1>
+
+          <a href="https://waniyah950.github.io/Fig/" target="_blank">
+            <video src="./Fig Website.mp4" autoplay muted loop class="w-full h-full object-cover" id="demo-video">
+
+          </a>
+        
+        </div>
+
+        <div
+          class="border-4 rounded-lg h-fit w-9/12 shadow-sm shadow-white md:hover:scale-105 bg-white transition-transform duration-500"
+        >
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+          >
+            BMI Calculator
+          </h1>
+          <a href="https://waniyah950.github.io/BMI-Calculator/" target="_blank">
+            <video src="./BMI Calculator Website.mp4" autoplay muted loop class="w-full h-full object-cover" id="demo-video">
+          </a>
+        </div>
+
+        <div
+          class="border-4 rounded-lg h-fit w-9/12 shadow-sm shadow-white md:hover:scale-105 bg-white transition-transform duration-500"
+        >
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+          >
+            Loan Calculator
+          </h1>
+          <a href="https://waniyah950.github.io/Loan-Calculator/" target="_blank">
+          <video src="./Loan Calculator Website.mp4" autoplay muted loop class="w-full h-full object-cover" id="demo-video">
+          </a>
+        </div>
+
+        <div
+          class="border-4 rounded-lg h-fit w-9/12 shadow-sm shadow-white md:hover:scale-105 bg-white transition-transform duration-500"
+        >
+          <h1
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+          >
+            Quiz
+          </h1>
+          <a href="https://waniyah950.github.io/_Quiz_/" target="_blank">
+            <video src="./Quiz Website.mp4" autoplay muted loop class="w-full h-full object-cover" id="demo-video">
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="min-h-screen">
+        <h1
+          class="text-4xl md:text-5xl text-black text-shadow-white text-shadow-2xs font-black text-center mt-10 md:my-12"
+        >
+          Skills
+        </h1>
+
+        <div
+          class="h-fit md:bg-black py-12 md:my-24 lg:grid lg:grid-cols-4 lg:grid-rows-1"
+        >
+          <div
+            class="border-2 rounded-lg w-fit p-2 md:p-0 md:w-3xs my-10 mx-auto h-fit shadow-sm shadow-white hover:scale-105 transition-transform duration-500 bg-white"
+          >
+            <h3
+              class="text-center text-3xl md:text-4xl font-black md:p-5 text-red-900 text-shadow-black text-shadow-2xs"
+            >
+              HTML
+            </h3>
+            <img src="./html.png" alt="HTML" class="size-24 md:size-32 m-14" />
+          </div>
+
+          <div
+            class="border-2 rounded-lg w-fit p-2 md:p-0 md:w-3xs my-10 mx-auto h-fit shadow-sm shadow-white hover:scale-105 transition-transform duration-500 bg-white"
+          >
+            <h3
+              class="text-center rounded-lg text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+            >
+              CSS
+            </h3>
+            <img src="./text.png" alt="CSS" class="size-24 md:size-32 m-14" />
+          </div>
+
+          <div
+            class="border-2 rounded-lg w-fit p-2 md:p-0 md:w-3xs my-10 mx-auto h-fit shadow-sm shadow-white hover:scale-105 transition-transform duration-500 bg-white"
+          >
+            <h3
+              class="text-center rounded-lg text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+            >
+              TailWind <br class="block md:hidden"> CSS
+            </h3>
+            <img
+              src="./Tailwind.png"
+              alt="TailWind CSS"
+              class="size-24 md:size-48 m-14 md:mx-auto md:m-1"
+            />
+          </div>
+
+          <div
+            class="border-2 rounded-lg w-fit p-2 md:p-0 md:w-3xs my-10 mx-auto h-fit shadow-sm shadow-white hover:scale-105 transition-transform duration-500 bg-white"
+          >
+            <h3
+              class="text-center rounded-lg text-4xl font-black p-5 text-red-900 text-shadow-black text-shadow-2xs"
+            >
+              JavaScript
+            </h3>
+            <img src="./js.png" alt="JavaScript" class="size-24 md:size-32 m-14" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="min-h-screen md:h-[50vh] my-16">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl text-white text-shadow-black text-shadow-2xs font-black text-center my-10"
+        >
+          Lets Connect
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="flex flex-col items-center gap-5">
+            <h5
+              class="text-2xl sm:text-3xl md:text-4xl text-black font-black text-center my-10"
+            >
+              Socials
+            </h5>
+
+            <a
+              href="mailto:itswani.swaaaan@gmail.com"
+              target="_blank"
+              class="flex items-center gap-4 text-white text-base sm:text-lg hover:scale-105 transition-transform"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              itswani.swaaaan@gmail.com
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/waniyah-khan/"
+              target="_blank"
+              class="flex items-center gap-4 text-white text-base sm:text-lg hover:scale-105 transition-transform"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              linkedin.com/in/waniyah-khan
+            </a>
+
+            <a
+              href="https://github.com/Waniyah950"
+              target="_blank"
+              class="flex items-center gap-4 text-white text-base sm:text-lg hover:scale-105 transition-transform"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                ></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              github.com/Waniyah950
+            </a>
+          </div>
+
+          <div class="flex flex-col items-start mx-auto">
+            <h5
+              class="text-2xl sm:text-3xl md:text-4xl text-black font-black text-center my-10"
+            >
+              Open To Opportunities
+            </h5>
+
+            <ul>
+              <li
+                class="text-white sm:text-lg my-2 text-shadow-2xs text-shadow-black hover:scale-105 transition-transform"
+              >
+                • Freelance & Contract work
+              </li>
+              <li
+                class="text-white sm:text-lg my-2 text-shadow-2xs text-shadow-black hover:scale-105 transition-transform"
+              >
+                • Startup & Business collaborations
+              </li>
+              <li
+                class="text-white sm:text-lg my-2 text-shadow-2xs text-shadow-black hover:scale-105 transition-transform"
+              >
+                • Mentoring
+              </li>
+              <li
+                class="text-white sm:text-lg my-2 text-shadow-2xs text-shadow-black hover:scale-105 transition-transform"
+              >
+                • Debugging
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function openNav() {
+        document.getElementById("openbtn").innerText = "";
+        document.getElementById("mySidenav").style.display = "block";
+        document.getElementById("mySidenav").style.transition = "0.5s ease";
+        document.getElementById("mySidenav").style.width = "350px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").style.transition = "0.5s ease";
+        document.getElementById("openbtn").innerText = "☰";
+      }
+
+      const videos = document.getElementById('demo-video');
+      videos.forEach(v => v.playbackRate = 2);
+
+    </script>
+  </body>
+</html>
